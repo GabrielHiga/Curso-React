@@ -10,20 +10,32 @@ import card from './components/layout/card'
 export default props => {
     return (
         <div id="app">
-            <h1>Fundamentos React (Arrow)</h1>
+            <h1>Fundamentos React</h1>
 
-            <Card titulo="Exemplo de card"></Card>
-            <Fragmento></Fragmento>
-            <ComParametro
-                titulo="Segundo componente"
-                aluno="Gabriel"
-                nota={9.5}> 
-            </ComParametro>
-            <Primeiro></Primeiro>
-            <Aleatorio
-                min={1}
-                max={60}
-            ></Aleatorio>
+            <Card titulo="#04 - Desafio Aleatório">
+                <Aleatorio min={1} max={60} />
+            </Card>
+
+            <Card titulo="#03 - Fragmento">
+                <Fragmento></Fragmento>
+            </Card>
+
+            <Card titulo="#02 - Parâmetro">
+                <ComParametro
+                    titulo="Segundo Componente"
+                    aluno="Gabriel"
+                    nota={9.5}> 
+                </ComParametro>
+            </Card>
+            
+            <Card titulo="#01 - Primeiro Componente">
+                <Primeiro></Primeiro>
+            </Card>
+
+            
+            
+            
+            
         </div>
     )
 }
