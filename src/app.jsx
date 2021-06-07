@@ -1,5 +1,7 @@
+import './app.css'
 import React from 'react'
 
+import Familia from './components/basicos/Familia'
 import Card from './components/layout/card'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
@@ -9,33 +11,35 @@ import card from './components/layout/card'
 
 export default props => {
     return (
-        <div id="app">
+        <div className="app">
             <h1>Fundamentos React</h1>
 
-            <Card titulo="#04 - Desafio Aleatório">
-                <Aleatorio min={1} max={60} />
-            </Card>
+            <div className="cards">
+                <Card titulo="#05 - Componente com Filhos" color="#00C8F8">
+                    <Familia sobrenome="Hideki"></Familia>
+                </Card>
 
-            <Card titulo="#03 - Fragmento">
-                <Fragmento></Fragmento>
-            </Card>
+                <Card titulo="#04 - Desafio Aleatório" color="#FA6900">
+                    <Aleatorio min={1} max={60} />
+                </Card>
 
-            <Card titulo="#02 - Parâmetro">
-                <ComParametro
-                    titulo="Segundo Componente"
-                    aluno="Gabriel"
-                    nota={9.5}> 
-                </ComParametro>
-            </Card>
-            
-            <Card titulo="#01 - Primeiro Componente">
-                <Primeiro></Primeiro>
-            </Card>
+                <Card titulo="#03 - Fragmento" color="#E94C6F">
+                    <Fragmento></Fragmento>
+                </Card>
 
-            
-            
-            
-            
+                <Card titulo="#02 - Parâmetro" color="#E8B71A">
+                    <ComParametro
+                        titulo="Segundo Componente"
+                        aluno="Gabriel"
+                        nota={9.5}> 
+                    </ComParametro>
+                </Card>
+                
+                <Card titulo="#01 - Primeiro Componente" color="#588C73">
+                    <Primeiro></Primeiro>
+                </Card>
+            </div>
+
         </div>
     )
 }
