@@ -1,0 +1,7 @@
+.tabela {
+    width: 100%;
+}
+
+.tabela tr th {
+    background-color: cornflowerblue;
+}
