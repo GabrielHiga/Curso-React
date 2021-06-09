@@ -1,6 +1,11 @@
 import './app.css'
 import React from 'react'
 
+import Contador from './components/contador/Contador'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
+import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import Familia from './components/basicos/Familia'
@@ -18,6 +23,26 @@ export default props => {
             <h1>Fundamentos React</h1>
 
             <div className="cards">
+                
+                <Card titulo="#11 - Contador" color="#5ED8A7">
+                    <Contador numeroInicial={10}></Contador>
+                </Card>
+
+                <Card titulo="#10 - Comunicação Indireta" color="#7CD64C">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+
+                <Card titulo="#09 - Comunicação Direta" color="#7CD64C">
+                    <DiretaPai></DiretaPai>
+                </Card>
+
+                <Card titulo="#08 - Condicional Par ou ímpar" color="#0B5E05">
+                    <ParOuImpar numero={290}></ParOuImpar>
+                    <UsuarioInfo usuario={{ nome: 'Gabriel' }} />
+                    <UsuarioInfo usuario={{ email : 'gabriel_hideki@live.com' }} />
+                    <UsuarioInfo usuario={{ }} />
+                </Card>
+
                 <Card titulo="#07 - Desafio Tabela Repetição" color="#C315E0">
                     <TabelaProdutos></TabelaProdutos>
                 </Card>

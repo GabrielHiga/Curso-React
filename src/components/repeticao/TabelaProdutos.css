@@ -2,6 +2,15 @@
     width: 100%;
 }
 
+.tabela tr {
+    background-color:RGBA(240,242,247,0.86);
+}
+
+.tabela tr td{
+    padding: 5px 0;
+}
+
 .tabela tr th {
-    background-color: cornflowerblue;
+    padding: 10px 0;
+    background-color:RGBA(231,230,230,0.86);
 }
