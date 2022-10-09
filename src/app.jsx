@@ -15,7 +15,6 @@ import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
-import card from './components/layout/card'
 
 export default props => {
     return (
@@ -38,9 +37,9 @@ export default props => {
 
                 <Card titulo="#08 - Condicional Par ou ímpar" color="#0B5E05">
                     <ParOuImpar numero={290}></ParOuImpar>
-                    <UsuarioInfo usuario={{ nome: 'Gabriel' }} />
+                    {/* <UsuarioInfo usuario={{ nome: 'Gabriel' }} />
                     <UsuarioInfo usuario={{ email : 'gabriel_hideki@live.com' }} />
-                    <UsuarioInfo usuario={{ }} />
+                    <UsuarioInfo usuario={{ }} /> */}
                 </Card>
 
                 <Card titulo="#07 - Desafio Tabela Repetição" color="#C315E0">
@@ -71,7 +70,7 @@ export default props => {
                     <ComParametro
                         titulo="Segundo Componente"
                         aluno="Gabriel"
-                        nota={9.5}> 
+                        nota={7}> 
                     </ComParametro>
                 </Card>
                 

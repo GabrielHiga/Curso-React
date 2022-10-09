@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Primeiro() {
     const msg = 'Seja bem vindo'
         return (
@@ -8,5 +6,4 @@ export default function Primeiro() {
                 <p>{ msg }</p>
             </div>
         )
-
 }

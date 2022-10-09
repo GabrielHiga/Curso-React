@@ -3,3 +3,16 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.status {
+    margin-left: 15px;
+}
+
+.reprovado {
+    color: red;
+    opacity: 0.4;
+}
+
+.aprovado {
+    color: green;
+}

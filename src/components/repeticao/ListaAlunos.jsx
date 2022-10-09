@@ -1,20 +1,19 @@
-import React from 'react'
 import alunos from '../../data/alunos'
 
-export default props => {
-
-        const AlunosLI = alunos.map(aluno => {
-            return (
-                <li key={aluno.id}>
-                    {aluno.id})  {aluno.nome} -> {aluno.nota}
-                </li>
-            )
-        })
+export default () => {
+    const listaAlunos = alunos.map(item => {
+        let status = (item.nota) > 5 ? 'Aprovado!' : 'Reprovado!';
+        return (
+            <li key={item.id} className={ status == 'Reprovado!' ? 'reprovado' : 'aprovado'}>
+                {item.nome} {item.nota} <span className='status'>{status}</span>
+            </li>
+        )
+    })
 
     return (
         <div>
             <ul style={{listStyle: 'none'}}>
-                {AlunosLI}
+                {listaAlunos}
             </ul>
         </div>
     )

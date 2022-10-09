@@ -2,9 +2,7 @@ import React from 'react'
 import './TabelaProdutos.css'
 import produtos from '../../data/produtos'
 
-export default props => {
-
-
+export default () => {
     const tabela = produtos.map(produtos => {
         return (
             <tr>
